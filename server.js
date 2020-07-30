@@ -26,7 +26,6 @@ require('./modules/passport');
 app.use(passport.initialize());
 
 routes(app);
-app.get('/', (req, res) => res.send('Hello World!'));
 
 app.use(errorHandler);
 
